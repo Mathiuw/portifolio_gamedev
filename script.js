@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /* make videos clickable */ 
-document.querySelectorAll('.project-images').forEach(project => {
-  project.addEventListener('click', () => {
-    window.open(project.dataset.link, '_blank', 'noopener');
-  });
-});
+// document.querySelectorAll('.project-images').forEach(project => {
+//   project.addEventListener('click', () => {
+//     window.open(project.dataset.link, '_blank', 'noopener');
+//   });
+// });
