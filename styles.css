@@ -67,23 +67,21 @@ p {
   font-weight: 400;
 }
 
-.contact_button {
-    display: inline-block;
-    border: 2px solid #d4f5c6;
-    border-radius: 10px;
-    font-size: 1.8rem;
-    background-color: #ffffff00;
-    color: #d4f5c6;
-    font-family: 'Jetbrains Mono';
-    text-align: center;
-}
-
 .contact_icon_button {
     display: inline-block;
     border: none;
     background-color: #ffffff00;
     color: #d4f5c6;
     font-family: 'Jetbrains Mono';
+    transition-duration: 0.4s;
+}
+
+.contact_icon_button:hover {
+    display: inline-block;
+    border: none;
+    background-color: #ffffff00;
+    color: #a9c1ac;
+    transition-duration: 0.4s;
 }
 
 .intro {
@@ -134,7 +132,7 @@ a:hover {
 /* projects */
 
 .project {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex;
     flex-direction: column;
     margin-bottom: 10vh;
@@ -144,7 +142,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .project-title {
@@ -163,6 +161,16 @@ a:hover {
     font-size: 1rem;
     margin-bottom: 10px;
     max-width: 700px;
+}
+
+.project-description-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-description-item {
+    display: inline-block;
+    max-width: 50%;
 }
 
 .project-images {
@@ -193,6 +201,26 @@ a:hover {
     width: 100%;     
     flex: 1 1 100%; 
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
 
 /* Mobile styling */
 @media (max-width: 768px) {
